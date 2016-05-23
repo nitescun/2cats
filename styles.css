@@ -1,3 +1,72 @@
 body {
-	background:blue;
+	background: #4F7429;
+	z-index: 0;
+}
+
+header {
+	text-align: center;
+	font-family: Helvetica;
+}
+
+.img {
+	position: fixed;
+	top: 0;left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.img img {
+	position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+	margin: auto;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+
+.text {
+	text-align: center;
+}
+
+#list {
+	font-family: Helvetica;
+	font-size: 15px;
+}
+
+.cats {
+	padding: 10px;
+	border: 1px solid gold;
+}
+
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+	z-index: 1;
+	color: gold;
+}
+
+a{
+	z-index: 2;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:link {
+    color: blue;
+}
+
+@media screen and (max-width: 500px) {
+.img {
+	position: fixed;
+	top: 0;left: 0;
+	width: 30%;
+	height: 30%;
+	z-index: -1;
+	}
 }
