@@ -33,11 +33,15 @@ header {
 	font-size: 15px;
 }
 
-.cats {
+#cats1 {
 	padding: 10px;
 	border: 1px solid gold;
 }
 
+#cats2 {
+	padding: 10px;
+	border: 1px solid gold;
+}
 
 footer {
 	position: absolute;

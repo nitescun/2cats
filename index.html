@@ -7,6 +7,37 @@
 			<header>
 				<h1>  We are Sleepy and Fire.</h1>
 			</header>
+			<script src="jquery.js"></script>
+			<script>
+			     $( document ).ready(function() {
+			     	var counter1 = 0;
+			        $( "#cats1" ).click(function( event ) {
+			        	if (counter1 == 0) {
+				            var height = $( "#cats1" ).height();
+				            $( "#cats1" ).height(height*2);
+				            counter1 += 1;
+				        }
+				        else{
+				        	var height = $( "#cats1" ).height();
+				            $( "#cats1" ).height(height/2);
+				            counter1 -= 1;
+			        	}
+			        });
+			     	var counter2 = 0;
+			        $( "#cats2" ).click(function( event ) {
+			        	if (counter2 == 0) {
+				            var height = $( "#cats2" ).height();
+				            $( "#cats2" ).height(height*2);
+				            counter2 += 1;
+				        }
+				        else{
+				        	var height = $( "#cats2" ).height();
+				            $( "#cats2" ).height(height/2);
+				            counter2 -= 1;
+			        	}
+			        });
+			    });
+			</script>
 			<link rel="stylesheet" type="text/css" href="styles.css">
 			<div class = "img">
 				<img  src="img/2cats.jpg" alt="0" >
@@ -21,7 +52,7 @@
 					<li>We like to play</li>
 				</ul>
 			</div>
-			<img class="cats" src="img/Sleepy.jpg" alt="1" />
+			<img id="cats1" src="img/Sleepy.jpg" alt="1" />
 			<p id="list">Here are few differences 
 			</p>
 			<div>
@@ -31,7 +62,7 @@
 					<li>Sleepy is calm and Fire is ready to fight</li>
 				</ul>
 			</div>
-			<img class="cats" src="img/Fire.jpg" alt="2" />
+			<img id="cats2" src="img/Fire.jpg" alt="2" />
 			<p> <a href="https://www.google.com/search?q=cats&espv=2&biw=2133&bih=1061&site=webhp&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiG3P7Y-NTMAhUC3mMKHVauAwAQ_AUIBigB&dpr=0.9"> Here</a> is a page about cats. Both page use CSS to look better.
 			<a href="contact_us.html"> Contact us</a> 
 			</p>
